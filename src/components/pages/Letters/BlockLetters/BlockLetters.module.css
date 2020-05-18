@@ -1,0 +1,13 @@
+.BlockLetterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.BlockLetterContainer li {
+  padding: 1rem;
+  list-style: none;
+  border: 1px solid #eee;
+  margin: 1rem;
+  cursor: pointer;
+}

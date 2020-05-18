@@ -1,0 +1,60 @@
+/* ================================================== */
+/* FIX FOOTER AT BOTTOM WITH FLEXBOX */
+/* ================================================== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#site-content {
+  -webkit-box-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+/* ================================================== */
+/* Main HEADING */
+/* ================================================== */
+.main-heading {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.main-heading::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  left: calc(50% - 30px);
+  bottom: 0;
+  height: 3px;
+  background-color: #ffc107;
+  z-index: 1;
+}
+.main-heading::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  left: calc(50% - 80px);
+  background-color: grey;
+  bottom: 1px;
+  height: 1px;
+}
+
+/* LI cursor pointer */
+.alllists li {
+  cursor: pointer;
+}
+li.r {
+  background-color: #333 !important;
+  color: #fff;
+}
+li.c {
+  background-color: #dc3545 !important;
+  color: #fff;
+}

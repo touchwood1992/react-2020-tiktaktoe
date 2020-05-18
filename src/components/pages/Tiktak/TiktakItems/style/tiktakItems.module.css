@@ -1,0 +1,36 @@
+.tiktakItemContainer,
+.tiktakItemContainer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+.tiktakItemContainer {
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+.tiktakItemContainer li {
+  list-style: none;
+}
+.row {
+  width: 100%;
+}
+.row li {
+  flex: 1;
+  background-color: #ffc107;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #f9f9f6;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .tiktakItemContainer {
+    width: 50%;
+  }
+}
